@@ -1,1 +1,22 @@
-// ваш код
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.nav-block {
+  display: flex;
+
+  &__list {
+    display: flex;
+    gap: 45px;
+    margin-right: 45px;
+  }
+
+}
