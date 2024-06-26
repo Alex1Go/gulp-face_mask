@@ -1,0 +1,31 @@
+.advan {
+  padding-top: 70px;
+
+  &__svg {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
+  &__list {
+    display: flex;
+    gap: 31px;
+  }
+  &__item {
+    display: flex;
+  }
+  &__tittle {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: var(--dark);
+  }
+
+  &__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 147%;
+    color: var(--grey);
+  }
+}

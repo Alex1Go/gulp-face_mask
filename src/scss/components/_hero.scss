@@ -52,7 +52,6 @@
   &__content {
     width: 555px;
     height: 430px;
-    padding-top: 304px;
   }
 
   &__name {
@@ -61,14 +60,16 @@
     font-size: 14px;
     line-height: 214%;
     color: var(--accent);
+    margin-bottom: 30px;
   }
 
-  &__title {
-    font-family: var(--second-family);
+  &__tittle {
+    font-family: "Rubik", sans-serif;
     font-weight: 700;
     font-size: 72px;
     line-height: 114%;
     color: var(--dark);
+    margin-bottom: 30px;
   }
 
   &__text {
@@ -77,6 +78,7 @@
     font-size: 16px;
     line-height: 150%;
     color: var(--grey);
+    margin-bottom: 50px;
   }
 
   &__link {
@@ -89,11 +91,27 @@
   }
 
   &__btn {
+    margin-right: 20px;
     border-radius: 8px;
     padding: 8px 24px;
     width: 115px;
-    height: 46px;
+    // height: 46px;
     box-shadow: 0 10px 15px 0 rgba(27, 95, 193, 0.19);
     background: var(--blue);
+  }
+  &__linktwo {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 214%;
+    text-align: center;
+    color: var(--accent);
+  }
+  &__btntwo {
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    padding: 8px 24px;
+    width: 125px;
+    height: 46px;
   }
 }

@@ -1,0 +1,30 @@
+.about {
+  padding-top: 80px;
+
+  &__box {
+    display: flex;
+  }
+
+  &__img {
+    width: 570px;
+    height: 616px;
+  }
+
+  &__tittle {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 104%;
+    color: var(--dark);
+  }
+  &__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+    color: var(--grey);
+  }
+  &__span {
+    font-weight: 700;
+  }
+}
