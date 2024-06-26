@@ -3,6 +3,26 @@
 *::after {
   box-sizing: border-box;
 }
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+
+}
+
+img {
+    display: block;
+}
 
 .page {
   height: 100%;
@@ -77,8 +97,10 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 var(--container-offset);
-  max-width: var(--container-width);
+  padding: 0 15px;
+  max-width: 1170px;
+  // padding: 0 var(--container-offset);
+  // max-width: var(--container-width);
 }
 
 .centered {
