@@ -1,0 +1,119 @@
+.info {
+  // padding-top: 80px;
+
+  &__container,
+  &__box3,
+  &__link-box {
+    display: flex;
+  }
+
+  &__imade {
+    width: 100%;
+  }
+  &__box1 {
+    max-width: 570px;
+    position: relative;
+  }
+  &__1 {
+    position: absolute;
+    top: 284px;
+    right: 0;
+    width: 285px;
+    height: 332px;
+    background-color: var(--blue);
+    padding: 60px 30px 80px 30px;
+  }
+  &__text1 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: var(--light-color);
+  }
+  &__2 {
+    width: 285px;
+    height: 332px;
+    padding: 80px 30px 132px 30px;
+    background-color: var(--light-color);
+  }
+  &__text2 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: var(--grey);
+  }
+  &__3 {
+    border-radius: 0 20px 0 0;
+    width: 285px;
+    height: 332px;
+    padding: 80px 30px 132px 30px;
+    background-color: var(--blue);
+  }
+  &__4 {
+    padding: 45px 40px 45px 38px;
+    border-radius: 0 0 20px 0;
+    width: 570px;
+    height: 284px;
+    background-color: var(--accent);
+  }
+  &__4tittle {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 250%;
+    color: var(--dark);
+  }
+  &__text4 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #000;
+    margin-bottom: 26px;
+  }
+
+  &__link {
+    border: 1px solid var(--blue);
+    border-radius: 8px;
+    padding: 8px 22px;
+    width: 125px;
+    height: 46px;
+
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 214%;
+    text-align: center;
+    color: var(--blue);
+    margin-right: 40px;
+  }
+  &__line {
+    width: 1px;
+    height: 46px;
+    border: 1px solid var(--light-color);
+    background-color: var(--light-color);
+    margin-right: 40px;
+  }
+
+  &__contact {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    color: var(--blue);
+  }
+  &__tel {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: #000;
+  }
+  &__img {
+    margin-right: 13px;
+  }
+  &__link-box {
+    align-items: center;
+  }
+}

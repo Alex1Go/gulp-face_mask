@@ -1,16 +1,15 @@
 .about {
   padding-top: 80px;
+  padding-bottom: 80px;
 
   &__box {
     display: flex;
-  }
-
-  &__img {
-    width: 570px;
-    height: 616px;
+    align-items: center;
+    gap: 47px;
   }
 
   &__tittle {
+    margin-bottom: 26px;
     font-family: var(--second-family);
     font-weight: 700;
     font-size: 48px;
@@ -27,4 +26,11 @@
   &__span {
     font-weight: 700;
   }
+}
+
+.first-box {
+  margin-bottom: 80px;
+}
+.text__box {
+  max-width: 523px;
 }

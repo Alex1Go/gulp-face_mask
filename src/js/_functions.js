@@ -66,7 +66,7 @@
 // const rellax = new Rellax('.rellax');
 
 // Подключение плавной прокрутки к якорям
-// import SmoothScroll from 'smooth-scroll';
+// import SmoothScroll from "smooth-scroll";
 // const scroll = new SmoothScroll('a[href*="#"]');
 
 // Подключение событий свайпа на мобильных

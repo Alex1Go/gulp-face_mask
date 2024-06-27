@@ -1,9 +1,12 @@
 <section class="about">
   <div class="container">
     <h2 class="visually-hidden">About</h2>
-    <div class="about__box">
-      <img class="about__img" src="" alt="doctor in mask" />
-      <div>
+    <div class="about__box first-box">
+      <picture>
+        <source srcset="img/doctor.webp" type="image/webp">
+        <img loading="lazy" class="about__img" src="img/doctor.jpg" width="570" height="616" alt="doctor in mask" />
+      </picture>
+      <div class="text__box">
         <h3 class="about__tittle">N95 Respirators</h3>
         <p class="about__text"><span class="about__span">The N95 mask</span> is a form of respiratory protective wear
           worn over the nose and mouth
@@ -21,11 +24,10 @@
             95%</span> of airborne particles when
           worn
           correctly.
-
-          <br>
-
-          During outbreaks of respiratory illnesses and during periods of intense air pollution, wearing <span
-            class="about__span">N95 masks</span> has
+        </p>
+        <br>
+        <p class="about__text"> During outbreaks of respiratory illnesses and during periods of intense air pollution,
+          wearing <span class="about__span">N95 masks</span> has
           been
           shown
           to help reduce the inhalation of compromised air, filtering out nasty pathogens which lead to illness or
@@ -45,7 +47,7 @@
     </div>
 
     <div class="about__box">
-      <div>
+      <div class="text__box">
         <h3 class="about__tittle">N95 Respirators In Industrial And Health Care Settings</h3>
         <p class="about__text">Most <span class="about__span">N95 respirators</span> are manufactured for use in
           construction and other industrial type
@@ -57,7 +59,9 @@
           Control
           and
           Prevention (CDC).
-
+        </p>
+        <br>
+        <p class="about__text">
           However, some N95 respirators are intended for use in a health care setting. Specifically, single-use,
           disposable
           respiratory protective devices used and worn by health care personnel during procedures to protect both the
@@ -69,7 +73,10 @@
           84.
         </p>
       </div>
-      <img class="about__img" src="" alt="man in mask" />
+      <picture>
+        <source srcset="img/man.webp" type="image/webp">
+        <img loading="lazy" src="img/man.jpg" class="about__img" width="570" height="620" alt="man in mask">
+      </picture>
     </div>
   </div>
 </section>

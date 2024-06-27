@@ -1,1 +1,1 @@
-import './components/scroll';
+import "./components/smooth-scroll";
