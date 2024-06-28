@@ -1,6 +1,6 @@
 .about {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 0px;
 
   &__box {
     display: flex;
@@ -26,11 +26,17 @@
   &__span {
     font-weight: 700;
   }
+  &__first-box {
+    margin-bottom: 80px;
+  }
+  &__text-box {
+    max-width: 523px;
+  }
 }
 
-.first-box {
-  margin-bottom: 80px;
-}
-.text__box {
-  max-width: 523px;
-}
+// .first-box {
+//   margin-bottom: 80px;
+// }
+// .text__box {
+//   max-width: 523px;
+// }

@@ -1,5 +1,8 @@
 .info {
-  // padding-top: 80px;
+  height: 384px;
+  &__container {
+    transform: translate(0%, 15%);
+  }
 
   &__container,
   &__box3,

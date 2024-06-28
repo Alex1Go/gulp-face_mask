@@ -47,7 +47,10 @@ a {
 }
 
 .site-container {
-  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1920px;
+  // overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
 }
 
 .is-hidden {
@@ -89,8 +92,8 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1170px;
+  padding: 0 390px;
+  max-width: 1920px;
   // padding: 0 var(--container-offset);
   // max-width: var(--container-width);
 }
