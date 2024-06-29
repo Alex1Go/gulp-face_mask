@@ -1,0 +1,74 @@
+.footer {
+  background-color: #d9d9d9;
+  padding-top: 80px;
+  padding-bottom: 40px;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  &__logo {
+    height: 40px;
+    width: 160px;
+    background-color: #c4c4c4;
+    text-align: center;
+    align-items: center;
+    padding: 7px 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      box-shadow: 0 9.04932px 26.5717px #1760d640;
+    }
+  }
+  &__logo-link {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--dark);
+  }
+  &__text {
+    max-width: 320px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+    // text-align: center;
+    color: var(--grey);
+  }
+  &__follow,
+  &__nav {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--dark);
+    margin-bottom: 20px;
+  }
+  &__network-name,
+  &__nav-link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 187%;
+    color: var(--grey);
+    &:focus,
+    &:hover {
+      color: #0c99eba9;
+    }
+  }
+  &__box-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__span {
+    margin: 0 4px;
+    width: 15px;
+    height: 15px;
+    background-color: var(--grey);
+  }
+}
