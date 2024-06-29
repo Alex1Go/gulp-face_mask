@@ -82,6 +82,7 @@
     padding: 8px 22px;
     width: 125px;
     height: 46px;
+    background-color: transparent;
 
     font-family: var(--second-family);
     font-weight: 500;
@@ -90,6 +91,13 @@
     text-align: center;
     color: var(--blue);
     margin-right: 40px;
+    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: var(--blue);
+      color: white;
+    }
   }
   &__line {
     width: 1px;

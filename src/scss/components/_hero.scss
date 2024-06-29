@@ -1,10 +1,22 @@
 .hero {
-  min-height: 900px;
+  padding-top: 147px;
   background-color: #f7fdfb;
+  background-image: url(../../img/fon.png);
+  background-repeat: no-repeat;
+  background-position: top right;
 
+  &__box {
+    display: flex;
+  }
+  &__img {
+    border-radius: 16px 16px 16px 0;
+    width: 496px;
+    height: 744px;
+  }
   &__content {
     width: 555px;
     height: 430px;
+    margin-right: 88px;
   }
 
   &__name {
@@ -46,11 +58,19 @@
   &__btn {
     margin-right: 20px;
     border-radius: 8px;
-    padding: 8px 24px;
+    padding: 12px 24px;
     width: 115px;
-    // height: 46px;
+
     box-shadow: 0 10px 15px 0 rgba(27, 95, 193, 0.19);
     background: var(--blue);
+    transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: #1a79fd;
+      box-shadow: 0 10px 15px 0 #7fadec;
+    }
   }
   &__linktwo {
     font-family: var(--second-family);
@@ -59,12 +79,25 @@
     line-height: 214%;
     text-align: center;
     color: var(--accent);
+    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: #fff;
+    }
   }
   &__btntwo {
     border: 1px solid var(--accent);
     border-radius: 8px;
-    padding: 8px 24px;
+    padding: 11px 24px;
     width: 125px;
     height: 46px;
+    transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent);
+      box-shadow: 0 10px 15px 0 rgba(252, 237, 106, 0.884);
+    }
   }
 }

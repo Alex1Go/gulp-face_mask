@@ -17,9 +17,12 @@
     padding: 7px 30px;
     margin-bottom: 30px;
     cursor: pointer;
+    transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
     &:focus,
     &:hover {
+      background-color: #79b3d488;
       box-shadow: 0 9.04932px 26.5717px #1760d640;
     }
   }
@@ -36,7 +39,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 187%;
-    // text-align: center;
     color: var(--grey);
   }
   &__follow,
@@ -55,8 +57,12 @@
     font-size: 17px;
     line-height: 187%;
     color: var(--grey);
+    transition: font-weight 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+      color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
     &:focus,
     &:hover {
+      font-weight: 800;
       color: #0c99eba9;
     }
   }
@@ -69,6 +75,6 @@
     margin: 0 4px;
     width: 15px;
     height: 15px;
-    background-color: var(--grey);
+    background-color: #acacac;
   }
 }

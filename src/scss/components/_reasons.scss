@@ -35,7 +35,12 @@
     color: var(--grey);
     margin-bottom: 35px;
   }
+
   &__ellipse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     min-width: 56px;
     height: 56px;
     margin-right: 18px;

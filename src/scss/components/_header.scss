@@ -3,53 +3,80 @@
   width: 100%;
   top: 0;
   left: 0;
-  padding: 20px 0 0 0 ;
-}
-.logo-block{
-  font-family: var(--font-family);
-  font-weight: 900;
-  font-size: 18px;
-  line-height: 200%;
-  width: 161px;
-  height: 40px;
-  color: #fff;
-  background-color: #C4C4C4;
-  text-align: center;
+  padding: 20px 0 0 0;
 
-}
-.header-cont{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  &__cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-}
-.nav-block {
-  display: flex;
-  align-items: center;
-}
-.nav-list {
-  display: flex;
-  gap: 45px;
-  margin-right: 45px;
-}
-.nav-link{
-  font-family: var(--font-family);
-font-weight: 400;
-font-size: 16px;
-line-height: 187%;
-text-align: center;
-color: var(--grey);
-}
-.header-btn {
-  border: none;
-  border-radius: 8px;
-  width: 123px;
-  height: 47px;
-font-family: var(--second-family);
-font-weight: 500;
-font-size: 14px;
-line-height: 214%;
-text-align: center;
-color: #fff;
-background-color:  #1b5fc1;;
+  &__logo {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 200%;
+    color: #fff;
+  }
+  &__logo-block {
+    padding: 4px 30px;
+    width: 161px;
+    height: 40px;
+    background-color: #c4c4c4;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+      background-color: #79b3d488;
+      box-shadow: 0 9.04932px 26.5717px #1760d640;
+    }
+  }
+
+  &__nav-block {
+    display: flex;
+    align-items: center;
+  }
+  &__nav-list {
+    display: flex;
+    gap: 45px;
+    margin-right: 45px;
+  }
+  &__nav-link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 187%;
+    text-align: center;
+    color: var(--grey);
+    transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+      color: #04a2fdf8;
+    }
+  }
+  &__btn {
+    border: none;
+    border-radius: 8px;
+    width: 123px;
+    height: 47px;
+    padding: 8px 20px;
+    background-color: #1b5fc1;
+    &:hover,
+    &:focus {
+      background-color: #1a79fd;
+      box-shadow: 0 10px 15px 0 #7fadec;
+    }
+  }
+  &__btn-link {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 214%;
+    text-align: center;
+    color: #fff;
+  }
 }
