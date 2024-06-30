@@ -2,6 +2,16 @@
   padding-top: 80px;
   padding-bottom: 0px;
 
+  &__svg1 {
+    position: absolute;
+    transform: rotate(180);
+    transform: translateY(-195px);
+    fill: linear-gradient(
+      127deg,
+      rgba(27, 95, 193, 0.08) 0%,
+      rgba(27, 95, 193, 0.04) 100%
+    );
+  }
   &__box {
     display: flex;
     align-items: center;
@@ -31,6 +41,16 @@
   }
   &__text-box {
     max-width: 523px;
+  }
+  &__svg2 {
+    z-index: -5;
+    position: absolute;
+    transform: translate(1160px, -620px);
+    fill: linear-gradient(
+      307deg,
+      rgba(40, 189, 134, 0.08) 0%,
+      rgba(40, 189, 134, 0.04) 100%
+    );
   }
 }
 

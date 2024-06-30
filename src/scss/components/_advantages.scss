@@ -2,17 +2,18 @@
   padding: 72px 0 53px 0;
   background: #f7fdfb;
 
-  &__svg {
-    width: 40px;
-    height: 40px;
+  &__box-svg {
+    margin-top: 6px;
     margin-right: 20px;
   }
+
   &__list {
     display: flex;
     gap: 31px;
   }
   &__item {
     display: flex;
+    min-width: 260px;
   }
   &__tittle {
     font-family: var(--font-family);
@@ -20,6 +21,7 @@
     font-size: 20px;
     line-height: 140%;
     color: var(--dark);
+    margin-bottom: 15px;
   }
 
   &__text {

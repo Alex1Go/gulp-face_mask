@@ -1,6 +1,10 @@
 .rev {
   height: 192px;
 
+  &__star-box {
+    display: flex;
+    margin-bottom: 20px;
+  }
   &__list {
     display: flex;
     justify-content: space-between;
@@ -9,7 +13,7 @@
 
   &__item {
     width: 370px;
-    padding: 60px 40px;
+    padding: 40px 40px;
     max-width: 370px;
     background: white;
     border: 1px solid rgba(146, 134, 135, 0.1);
