@@ -1,17 +1,32 @@
 <header class="header">
   <div class="container header__cont">
-    <nav class="header__logo-block">
+    <div class="header__logo-block">
       <a href="../index.html" class="header__logo">MASK</a>
-    </nav>
-    <div class="header__nav-block">
+    </div>
+    <nav class="header__nav-block" data-menu>
       <ul class="header__nav-list">
-        <li class="header__nav-item"><a href="../index.html" class="header__nav-link">Home</a></li>
-        <li class="header__nav-item"><a href="" class="header__nav-link">About</a></li>
-        <li class="header__nav-item"><a href="" class="header__nav-link">Product</a></li>
-        <li class="header__nav-item"><a href="#contact" class="header__nav-link" data-scroll>Contact</a></li>
-        <li class="header__nav-item"><a href="" class="header__nav-link">History</a></li>
+        <li class="header__nav-item">
+          <a href="../index.html" class="header__nav-link">Home</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="" class="header__nav-link">About</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="" class="header__nav-link">Product</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#contact" class="header__nav-link" data-scroll>Contact</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="" class="header__nav-link">History</a>
+        </li>
       </ul>
       <a class="header__btn header__btn-link" href="#contact">Contact us</a>
-    </div>
+    </nav>
+    <button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
   </div>
 </header>

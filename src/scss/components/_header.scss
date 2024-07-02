@@ -18,6 +18,7 @@
     line-height: 200%;
     color: #fff;
   }
+
   &__logo-block {
     padding: 4px 30px;
     width: 161px;
@@ -33,11 +34,18 @@
       background-color: #79b3d488;
       box-shadow: 0 9.04932px 26.5717px #1760d640;
     }
+    // @include mobile {
+    //   width: 100px;
+    //   padding: 3px 20px;
+    // }
   }
-
   &__nav-block {
     display: flex;
     align-items: center;
+
+    // @include big-desktop {
+    //   display: none;
+    // }
   }
   &__nav-list {
     display: flex;
