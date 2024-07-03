@@ -17,6 +17,9 @@
     font-size: 18px;
     line-height: 200%;
     color: #fff;
+    @include tablet {
+      font-weight: 600;
+    }
   }
 
   &__logo-block {
@@ -34,23 +37,23 @@
       background-color: #79b3d488;
       box-shadow: 0 9.04932px 26.5717px #1760d640;
     }
-    // @include mobile {
-    //   width: 100px;
-    //   padding: 3px 20px;
-    // }
+    @include tablet {
+      width: 100px;
+      padding: 3px 20px;
+    }
   }
   &__nav-block {
     display: flex;
     align-items: center;
-
-    // @include big-desktop {
-    //   display: none;
-    // }
   }
   &__nav-list {
     display: flex;
     gap: 45px;
     margin-right: 45px;
+    @include tablet {
+      gap: 25px;
+      margin-right: 25px;
+    }
   }
   &__nav-link {
     font-family: var(--font-family);
@@ -87,6 +90,11 @@
     &:focus {
       background-color: #1a79fd;
       box-shadow: 0 10px 15px 0 #7fadec;
+    }
+    @include tablet {
+      width: 100px;
+      height: 40px;
+      padding: 5px 20px;
     }
   }
   &__btn-link {

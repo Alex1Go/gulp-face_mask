@@ -1,19 +1,21 @@
 .hero {
-  padding-top: 147px;
   background-color: #f7fdfb;
-  background-image: url(../../img/fon.png);
-  background-repeat: no-repeat;
-  background-position: top right;
 
   &__box {
     display: flex;
+    height: 891px;
+    background-image: url(../../img/fon.png);
+    background-repeat: no-repeat;
+    background-position: top right;
   }
   &__img {
     border-radius: 16px 16px 16px 0;
     width: 496px;
     height: 744px;
+    margin-top: 147px;
   }
   &__content {
+    margin-top: 304px;
     width: 555px;
     height: 430px;
     margin-right: 88px;

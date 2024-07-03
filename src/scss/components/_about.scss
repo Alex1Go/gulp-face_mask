@@ -4,8 +4,8 @@
 
   &__svg1 {
     position: absolute;
-    transform: rotate(180);
-    transform: translateY(-195px);
+    // transform: rotate(180);
+    transform: translate(-390px, -195px);
     fill: linear-gradient(
       127deg,
       rgba(27, 95, 193, 0.08) 0%,
@@ -45,7 +45,7 @@
   &__svg2 {
     z-index: -5;
     position: absolute;
-    transform: translate(1160px, -620px);
+    transform: translate(770px, -620px);
     fill: linear-gradient(
       307deg,
       rgba(40, 189, 134, 0.08) 0%,
