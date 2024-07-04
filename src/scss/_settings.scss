@@ -56,10 +56,16 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 390px;
-  max-width: 1920px;
+  width: 1920px;
 
   @include tablet {
     padding: 0 30px;
+    width: 768px;
+  }
+
+  @include mobile {
+    padding: 0 20px;
+    width: 375px;
   }
 }
 

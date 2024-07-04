@@ -7,18 +7,34 @@
     background-image: url(../../img/fon.png);
     background-repeat: no-repeat;
     background-position: top right;
+
+    @include tablet {
+      background-position: center;
+      height: 647px;
+    }
   }
   &__img {
     border-radius: 16px 16px 16px 0;
     width: 496px;
     height: 744px;
     margin-top: 147px;
+
+    @include tablet {
+      width: 328px;
+      height: 500px;
+    }
   }
   &__content {
     margin-top: 304px;
     width: 555px;
     height: 430px;
     margin-right: 88px;
+
+    @include tablet {
+      margin-right: auto;
+      max-width: 350px;
+      margin-top: 204px;
+    }
   }
 
   &__name {
@@ -37,6 +53,10 @@
     line-height: 114%;
     color: var(--dark);
     margin-bottom: 30px;
+
+    @include tablet {
+      font-size: 50px;
+    }
   }
 
   &__text {

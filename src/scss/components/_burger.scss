@@ -22,7 +22,7 @@
       margin-top: 7px;
     }
   }
-  @include tablet {
+  @include mobile-2 {
     display: none;
   }
 }
