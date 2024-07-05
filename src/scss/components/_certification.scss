@@ -1,9 +1,14 @@
 .certif {
   padding: 392px 0 80px 0;
   background-color: #f7fdfb;
+
   @include tablet {
+    padding: 800px 0 80px 0;
+  }
+  @include mobile {
     padding: 1000px 0 80px 0;
   }
+
   &__container {
     display: flex;
     align-items: center;
@@ -54,7 +59,7 @@
       gap: 45px;
     }
     @include mobile {
-      justify-content: space-between;
+      gap: 15px;
       margin-top: 20px;
     }
   }

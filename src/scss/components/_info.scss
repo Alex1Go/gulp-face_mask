@@ -22,13 +22,17 @@
   &__box3,
   &__link-box {
     display: flex;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &__image {
     width: 570px;
 
     @include tablet {
-      width: 708px;
+      width: 100%;
       height: 616px;
     }
   }
@@ -37,7 +41,13 @@
     position: relative;
 
     @include tablet {
+      margin-bottom: 20px;
       max-width: 708px;
+    }
+  }
+  &__box2 {
+    @include tablet {
+      width: 708px;
     }
   }
   &__1 {
@@ -45,10 +55,17 @@
     top: 284px;
     right: 0;
     width: 285px;
-    height: 332px;
+    // height: 332px;
     background-color: var(--blue);
     padding: 60px 30px 80px 30px;
+
+    @include mobile {
+      top: 0;
+      padding: 20px;
+      width: 335px;
+    }
   }
+
   &__text1 {
     font-family: var(--font-family);
     font-weight: 400;
@@ -58,9 +75,17 @@
   }
   &__2 {
     width: 285px;
-    height: 332px;
+    height: 100%;
     padding: 80px 30px 132px 30px;
     background-color: var(--light-color);
+
+    @include tablet {
+      width: 354px;
+      padding: 30px;
+    }
+    @include mobile {
+      max-width: 335px;
+    }
   }
   &__text2 {
     font-family: var(--font-family);
@@ -72,16 +97,34 @@
   &__3 {
     border-radius: 0 20px 0 0;
     width: 285px;
-    height: 332px;
+    height: 100%;
     padding: 80px 30px 132px 30px;
     background-color: var(--blue);
+
+    @include tablet {
+      width: 354px;
+      border-radius: 0 0 0 0;
+      padding: 30px;
+    }
+    @include mobile {
+      max-width: 335px;
+    }
   }
   &__4 {
     padding: 45px 40px 45px 38px;
     border-radius: 0 0 20px 0;
     width: 570px;
-    height: 284px;
+    min-height: 284px;
     background-color: var(--accent);
+
+    @include tablet {
+      width: 708px;
+      border-radius: 0 0 0 0;
+    }
+    @include mobile {
+      max-width: 335px;
+      padding: 20px;
+    }
   }
   &__4tittle {
     font-family: var(--second-family);
@@ -89,6 +132,10 @@
     font-size: 20px;
     line-height: 250%;
     color: var(--dark);
+
+    @include mobile {
+      line-height: 150%;
+    }
   }
   &__text4 {
     font-family: var(--font-family);
@@ -121,6 +168,12 @@
       background-color: var(--blue);
       color: white;
     }
+    @include mobile {
+      margin-bottom: 20px;
+      margin-right: 0;
+      width: 185px;
+      padding: 8px auto;
+    }
   }
   &__line {
     width: 1px;
@@ -128,8 +181,14 @@
     border: 1px solid var(--light-color);
     background-color: var(--light-color);
     margin-right: 40px;
-  }
 
+    @include mobile {
+      display: none;
+    }
+  }
+  &__contact-box {
+    display: flex;
+  }
   &__contact {
     font-family: var(--font-family);
     font-weight: 600;

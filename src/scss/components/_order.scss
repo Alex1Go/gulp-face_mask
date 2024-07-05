@@ -1,5 +1,9 @@
 .order {
   padding-bottom: 120px;
+  @include tablet {
+    padding-bottom: 70px;
+  }
+
   &__box {
     text-align: center;
   }
@@ -10,10 +14,14 @@
     line-height: 104%;
     color: var(--dark);
     margin-bottom: 30px;
+
+    @include tablet {
+      font-size: 32px;
+    }
   }
   &__text {
     margin: 0 auto 35px auto;
-    width: 700px;
+    max-width: 700px;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;

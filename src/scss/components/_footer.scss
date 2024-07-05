@@ -7,7 +7,28 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
+
+    @include tablet {
+      margin-bottom: 50px;
+    }
+    @include mobile {
+      flex-direction: column;
+    }
   }
+  &__net-box {
+    display: flex;
+    gap: 200px;
+
+    @include tablet {
+      gap: 100px;
+    }
+    @include mobile {
+      margin-top: 25px;
+      gap: 0;
+      justify-content: space-between;
+    }
+  }
+
   &__logo {
     height: 40px;
     width: 160px;

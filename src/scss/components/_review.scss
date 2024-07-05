@@ -1,6 +1,9 @@
 .rev {
   height: 192px;
 
+  @include mobile {
+    height: 210px;
+  }
   &__star-box {
     display: flex;
     margin-bottom: 20px;
@@ -9,16 +12,28 @@
     display: flex;
     justify-content: space-between;
     transform: translate(0%, -80%);
+
+    @include tablet {
+      gap: 30px;
+    }
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &__item {
-    width: 370px;
+    // width: 370px;
     padding: 40px 40px;
     max-width: 370px;
     background: white;
     border: 1px solid rgba(146, 134, 135, 0.1);
     box-shadow: 0 9.04932px 26.5717px #d7e4f940;
     border-radius: 15px 15px 15px 0;
+  }
+  &__item-del {
+    @include tablet {
+      display: none;
+    }
   }
   &__text {
     font-family: var(--font-family);
