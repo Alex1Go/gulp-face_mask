@@ -1,10 +1,24 @@
 .info {
   height: 384px;
+
   &__container {
+    display: flex;
     transform: translate(0%, 15%);
+
+    @include tablet {
+      flex-direction: column;
+      transform: translate(0%, 5%);
+    }
   }
 
-  &__container,
+  // &__container {
+  //   display: flex;
+
+  //   @include tablet {
+  //     flex-direction: column;
+  //   }
+  // }
+
   &__box3,
   &__link-box {
     display: flex;
@@ -12,10 +26,19 @@
 
   &__image {
     width: 570px;
+
+    @include tablet {
+      width: 708px;
+      height: 616px;
+    }
   }
   &__box1 {
     max-width: 570px;
     position: relative;
+
+    @include tablet {
+      max-width: 708px;
+    }
   }
   &__1 {
     position: absolute;

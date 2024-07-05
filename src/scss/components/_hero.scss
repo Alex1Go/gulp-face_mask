@@ -12,6 +12,10 @@
       background-position: center;
       height: 647px;
     }
+    @include mobile {
+      flex-direction: column;
+      height: 891px;
+    }
   }
   &__img {
     border-radius: 16px 16px 16px 0;
@@ -22,6 +26,12 @@
     @include tablet {
       width: 328px;
       height: 500px;
+    }
+
+    @include mobile {
+      max-width: 335px;
+      height: 410px;
+      margin-top: 20px;
     }
   }
   &__content {
@@ -34,6 +44,10 @@
       margin-right: auto;
       max-width: 350px;
       margin-top: 204px;
+    }
+    @include mobile {
+      margin-top: 30px;
+      max-width: 335px;
     }
   }
 
@@ -66,6 +80,10 @@
     line-height: 150%;
     color: var(--grey);
     margin-bottom: 50px;
+
+    @include mobile {
+      margin-bottom: 25px;
+    }
   }
 
   &__link {
