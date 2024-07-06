@@ -3,7 +3,6 @@
   "version": "3.0.0",
   "description": "gulp-builder for weblayout",
   "main": "gulpfile.js",
-  "type": "module",
   "scripts": {
     "stylelint": "npx stylelint **/*.scss",
     "style-fix": "npx stylelint **/*.scss --fix",

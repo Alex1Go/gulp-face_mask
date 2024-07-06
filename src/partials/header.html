@@ -3,22 +3,22 @@
     <div class="header__logo-block">
       <a href="../index.html" class="header__logo">MASK</a>
     </div>
-    <nav class="header__nav-block" data-menu>
+    <nav class="header__nav-block" title="Главное меню">
       <ul class="header__nav-list">
         <li class="header__nav-item">
-          <a href="../index.html" class="header__nav-link">Home</a>
+          <a href="../index.html" class="header__nav-link" data-scroll>Home</a>
         </li>
         <li class="header__nav-item">
-          <a href="" class="header__nav-link">About</a>
+          <a href="" class="header__nav-link" data-scroll>About</a>
         </li>
         <li class="header__nav-item">
-          <a href="" class="header__nav-link">Product</a>
+          <a href="" class="header__nav-link" data-scroll>Product</a>
         </li>
         <li class="header__nav-item">
           <a href="#contact" class="header__nav-link" data-scroll>Contact</a>
         </li>
         <li class="header__nav-item">
-          <a href="" class="header__nav-link">History</a>
+          <a href="" class="header__nav-link" data-scroll>History</a>
         </li>
       </ul>
       <a class="header__btn header__btn-link" href="#contact">Contact us</a>
@@ -28,10 +28,11 @@
       <span class="burger__line"></span>
       <span class="burger__line"></span>
     </button>
-    <!-- <div class="header__mob-cont">
+
+    <div class="header__mob-cont" data-menu>
       <nav class="header__mob-block">
-        <button class="header__menu-close" type="button">
-          <svg class="head-close-svg" width="28" height="28">
+        <button class="header__menu-close" type="button" js-close-menu>
+          <svg class="header__close-svg" width="28" height="28">
             <use href="../img/svg/sptite.svg#mob-menu-close"></use>
           </svg>
         </button>
@@ -54,6 +55,6 @@
         </ul>
         <a class="header__btn-mob header__btn-link-mob" href="#contact">Contact us</a>
       </nav>
-    </div> -->
+    </div>
   </div>
 </header>
