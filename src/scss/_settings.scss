@@ -47,9 +47,6 @@ a {
 }
 
 .site-container {
-  // margin: 0 auto;
-  // padding: 0;
-  // max-width: 1920px;
   overflow: hidden;
 }
 
@@ -68,23 +65,6 @@ a {
     width: 375px;
   }
 }
-
-// .container {
-
-// }
-// .container-fluid {
-//   margin: 0 auto;
-//   padding: 0;
-//   max-width: var(--container-fluid-width);
-// }
-
-// .container {
-//   margin: 0 auto;
-//   padding: 0 390px;
-//   max-width: 1920px;
-//   padding: 0 var(--container-offset);
-//   max-width: var(--container-width);
-// }
 
 .is-hidden {
   display: none !important; /* stylelint-disable-line declaration-no-important */
@@ -139,4 +119,17 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+.burger {
+  @include burger;
+
+  --burger-height: 18px;
+
+  display: none;
+  color: rgb(184, 7, 7);
+
+  @include mobile {
+    display: block;
+  }
 }
