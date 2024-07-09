@@ -16,7 +16,7 @@ import { cacheTask } from "./gulp/tasks/cache.js";
 import { rewrite } from "./gulp/tasks/rewrite.js";
 import { htmlMinify } from "./gulp/tasks/html-minify.js";
 import { zipFiles } from "./gulp/tasks/zip.js";
-import { ghPage } from "./gulp/tasks/ghPages.js";
+import { ghPages } from "./gulp/tasks/ghPages.js";
 
 global.app = {
   gulp,
@@ -86,5 +86,5 @@ export { zip };
 
 gulp.task("default", dev);
 gulp.task("deploy", function () {
-  return gulp.src("./build/**/*").pipe(ghPage);
+  return gulp.src("./build/**/*").pipe(ghPages);
 });
