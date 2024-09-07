@@ -85,5 +85,5 @@ export { cache };
 export { zip };
 export { deployGhPages };
 
-
+gulp.task("deploy", deployGhPages);
 gulp.task("default", dev);
