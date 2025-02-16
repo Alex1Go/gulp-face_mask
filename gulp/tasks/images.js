@@ -4,7 +4,7 @@ import newer from "gulp-newer";
 
 export const images = () => {
   return app.gulp
-    .src([`${app.paths.srcImgFolder}/**/**.{jpg,jpeg,png,svg}`], {
+    .src([`${app.paths.srcImgFolder}/**/*.{jpg,jpeg,png,svg}`], {
       encoding: false,
     })
     .pipe(newer(app.paths.buildImgFolder))
@@ -13,8 +13,8 @@ export const images = () => {
         app.isProd,
         imagemin([
           gifsicle({ interlaced: true }),
-          mozjpeg({ quality: 75, progressive: true }),
-          optipng({ optimizationLevel: 2 }),
+          mozjpeg({ quality: 90, progressive: true }),
+          optipng({ optimizationLevel: 1 }),
         ])
       )
     )
