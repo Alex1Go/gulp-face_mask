@@ -12,7 +12,7 @@
     "build": "npm run stylelint && npm run code && gulp build --build",
     "cache": "gulp cache",
     "backend": "gulp backend",
-    "deploy": "gulp deployGhPages",
+    "deploy": "gulp deploy",
     "zip": "gulp zip --build"
   },
   "author": "Alex",
