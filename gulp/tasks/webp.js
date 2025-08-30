@@ -1,3 +1,4 @@
+import newer from "gulp-newer";
 import webp from "gulp-webp";
 
 export const webpImages = () => {
