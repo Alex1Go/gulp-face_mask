@@ -208,6 +208,8 @@ const enableScroll = () => {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
+// This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
+(() => {
 /*!************************!*\
   !*** ./src/js/main.js ***!
   \************************/
@@ -215,6 +217,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vars_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./_vars.js */ "./src/js/_vars.js");
 /* harmony import */ var _functions_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_functions.js */ "./src/js/_functions.js");
 
+
+})();
 
 /******/ })()
 ;
