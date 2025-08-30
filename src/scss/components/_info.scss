@@ -38,6 +38,7 @@
       height: 616px;
     }
   }
+
   &__box1 {
     max-width: 570px;
     position: relative;
@@ -47,11 +48,13 @@
       max-width: 708px;
     }
   }
+
   &__box2 {
     @include breakpoint.tablet {
       width: 708px;
     }
   }
+
   &__1 {
     position: absolute;
     top: 284px;
@@ -75,6 +78,7 @@
     line-height: 160%;
     color: var(--light-color);
   }
+
   &__2 {
     width: 285px;
     height: 100%;
@@ -89,6 +93,7 @@
       max-width: 335px;
     }
   }
+
   &__text2 {
     font-family: var(--font-family);
     font-weight: 400;
@@ -96,6 +101,7 @@
     line-height: 160%;
     color: var(--grey);
   }
+
   &__3 {
     border-radius: 0 20px 0 0;
     width: 285px;
@@ -112,6 +118,7 @@
       max-width: 335px;
     }
   }
+
   &__4 {
     padding: 45px 40px 45px 38px;
     border-radius: 0 0 20px 0;
@@ -128,6 +135,7 @@
       padding: 20px;
     }
   }
+
   &__4tittle {
     font-family: var(--second-family);
     font-weight: 700;
@@ -139,6 +147,7 @@
       line-height: 150%;
     }
   }
+
   &__text4 {
     font-family: var(--font-family);
     font-weight: 400;
@@ -177,6 +186,7 @@
       padding: 8px auto;
     }
   }
+
   &__line {
     width: 1px;
     height: 46px;
@@ -188,9 +198,11 @@
       display: none;
     }
   }
+
   &__contact-box {
     display: flex;
   }
+
   &__contact {
     font-family: var(--font-family);
     font-weight: 600;
@@ -198,6 +210,7 @@
     line-height: 171%;
     color: var(--blue);
   }
+
   &__tel {
     font-family: var(--font-family);
     font-weight: 600;
@@ -205,9 +218,11 @@
     line-height: 100%;
     color: #000;
   }
+
   &__img {
     margin-right: 13px;
   }
+
   &__link-box {
     align-items: center;
   }
