@@ -54,6 +54,7 @@ const dev = gulp.series(
   svgSprites,
   watcher
 );
+
 const backend = gulp.series(
   clean,
   htmlInclude,
@@ -64,6 +65,7 @@ const backend = gulp.series(
   webpImages,
   svgSprites
 );
+
 const build = gulp.series(
   clean,
   htmlInclude,
@@ -75,6 +77,20 @@ const build = gulp.series(
   svgSprites,
   htmlMinify
 );
+
+const buildAndDeploy = gulp.series(
+  clean,
+  htmlInclude,
+  scripts,
+  styles,
+  resources,
+  images,
+  webpImages,
+  svgSprites,
+  htmlMinify,
+  deployGhPages
+);
+
 const cache = gulp.series(cacheTask, rewrite);
 const zip = zipFiles;
 
@@ -84,6 +100,8 @@ export { backend };
 export { cache };
 export { zip };
 export { deployGhPages };
+export { buildAndDeploy };
 
-gulp.task("deploy", deployGhPages);
+gulp.task("deploy", buildAndDeploy);
+gulp.task("build-only", build);
 gulp.task("default", dev);
