@@ -1,13 +1,13 @@
 @use "../../scss/mixins/breakpoint";
 
 .reas {
-  background-color: #f7fdfb;
-  padding-bottom: 394px;
   border-radius: 0 0 0 150px;
+  padding-bottom: 394px;
+  background-color: #f7fdfb;
 
   @include breakpoint.mobile {
+    border-radius: 0;
     padding-bottom: 760px;
-    border-radius: 0 0 0 0;
   }
 
   &__block {
@@ -24,6 +24,7 @@
       display: none;
     }
   }
+
   &__box {
     max-width: 650px;
 
@@ -36,6 +37,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px 26px;
+
     @include breakpoint.tablet {
       gap: 30px 35px;
     }
@@ -51,47 +53,46 @@
   }
 
   &__tittle {
+    margin-bottom: 26px;
     font-family: var(--second-family);
     font-weight: 700;
     font-size: 48px;
     line-height: 104%;
     color: var(--dark);
-    margin-bottom: 26px;
 
     @include breakpoint.tablet {
-      font-size: 32px;
       margin-bottom: 20px;
+      font-size: 32px;
     }
   }
 
   &__text {
+    margin-bottom: 35px;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;
     line-height: 187%;
     color: var(--grey);
-    margin-bottom: 35px;
   }
 
   &__ellipse {
     display: flex;
-    justify-content: center;
     align-items: center;
-
-    min-width: 56px;
-    height: 56px;
+    justify-content: center;
     margin-right: 18px;
     border-radius: 100%;
+    height: 56px;
+    min-width: 56px;
     background-color: var(--blue);
   }
 
   &__box-tittle {
+    margin-bottom: 9px;
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 20px;
     line-height: 140%;
     color: var(--dark);
-    margin-bottom: 9px;
   }
 
   &__box-text {

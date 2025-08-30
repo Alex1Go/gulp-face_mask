@@ -1,28 +1,31 @@
 @use "../../scss/mixins/breakpoint";
+
 .hero {
   background-color: #f7fdfb;
 
   &__box {
     display: flex;
     height: 891px;
-    background-image: url(../../img/fon.png);
-    background-repeat: no-repeat;
+    background-image: url("../../img/fon.png");
     background-position: top right;
+    background-repeat: no-repeat;
 
     @include breakpoint.tablet {
-      background-position: center;
       height: 647px;
+      background-position: center;
     }
+
     @include breakpoint.mobile {
       flex-direction: column;
       height: 891px;
     }
   }
+
   &__img {
+    margin-top: 147px;
     border-radius: 16px 16px 16px 0;
     width: 496px;
     height: 744px;
-    margin-top: 147px;
 
     @include breakpoint.tablet {
       width: 328px;
@@ -30,22 +33,24 @@
     }
 
     @include breakpoint.mobile {
+      margin-top: 20px;
       width: 335px;
       height: 375px;
-      margin-top: 20px;
     }
   }
+
   &__content {
     margin-top: 304px;
+    margin-right: 88px;
     width: 555px;
     height: 430px;
-    margin-right: 88px;
 
     @include breakpoint.tablet {
+      margin-top: 204px;
       margin-right: auto;
       max-width: 350px;
-      margin-top: 204px;
     }
+
     @include breakpoint.mobile {
       margin-top: 90px;
       max-width: 335px;
@@ -53,21 +58,21 @@
   }
 
   &__name {
+    margin-bottom: 30px;
     font-family: var(--second-family);
     font-weight: 500;
     font-size: 14px;
     line-height: 214%;
     color: var(--accent);
-    margin-bottom: 30px;
   }
 
   &__tittle {
+    margin-bottom: 30px;
     font-family: "Rubik", sans-serif;
     font-weight: 700;
     font-size: 72px;
     line-height: 114%;
     color: var(--dark);
-    margin-bottom: 30px;
 
     @include breakpoint.tablet {
       font-size: 50px;
@@ -75,12 +80,12 @@
   }
 
   &__text {
+    margin-bottom: 50px;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     color: var(--grey);
-    margin-bottom: 50px;
 
     @include breakpoint.mobile {
       margin-bottom: 25px;
@@ -101,7 +106,6 @@
     border-radius: 8px;
     padding: 12px 24px;
     width: 115px;
-
     box-shadow: 0 10px 15px 0 rgba(27, 95, 193, 0.19);
     background: var(--blue);
     transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
@@ -109,10 +113,11 @@
 
     &:hover,
     &:focus {
-      background-color: #1a79fd;
       box-shadow: 0 10px 15px 0 #7fadec;
+      background-color: #1a79fd;
     }
   }
+
   &__linktwo {
     font-family: var(--second-family);
     font-weight: 500;
@@ -121,11 +126,13 @@
     text-align: center;
     color: var(--accent);
     transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover,
     &:focus {
       color: #fff;
     }
   }
+
   &__btntwo {
     border: 1px solid var(--accent);
     border-radius: 8px;
@@ -137,8 +144,8 @@
 
     &:hover,
     &:focus {
-      background-color: var(--accent);
       box-shadow: 0 10px 15px 0 rgba(252, 237, 106, 0.884);
+      background-color: var(--accent);
     }
   }
 }

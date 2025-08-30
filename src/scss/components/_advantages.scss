@@ -1,11 +1,11 @@
 @use "../../scss/mixins/breakpoint";
 
 .advan {
-  padding: 72px 0 53px 0;
+  padding: 72px 0 53px;
   background: #f7fdfb;
 
   @include breakpoint.mobile {
-    padding: 50px 0 53px 0;
+    padding: 50px 0 53px;
   }
 
   &__box-svg {
@@ -22,6 +22,7 @@
       gap: 25px;
     }
   }
+
   &__item {
     display: flex;
     min-width: 260px;
@@ -30,13 +31,14 @@
       max-width: 340px;
     }
   }
+
   &__tittle {
+    margin-bottom: 15px;
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 20px;
     line-height: 140%;
     color: var(--dark);
-    margin-bottom: 15px;
 
     @include breakpoint.mobile {
       margin-bottom: 5px;

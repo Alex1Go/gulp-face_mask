@@ -2,6 +2,7 @@
 
 .order {
   padding-bottom: 120px;
+
   @include breakpoint.tablet {
     padding-bottom: 70px;
   }
@@ -9,20 +10,22 @@
   &__box {
     text-align: center;
   }
+
   &__tittle {
+    margin-bottom: 30px;
     font-family: var(--second-family);
     font-weight: 700;
     font-size: 48px;
     line-height: 104%;
     color: var(--dark);
-    margin-bottom: 30px;
 
     @include breakpoint.tablet {
       font-size: 32px;
     }
   }
+
   &__text {
-    margin: 0 auto 35px auto;
+    margin: 0 auto 35px;
     max-width: 700px;
     font-family: var(--font-family);
     font-weight: 400;
@@ -31,24 +34,24 @@
     text-align: center;
     color: var(--grey);
   }
+
   &__link {
     border-radius: 8px;
     padding: 15px 24px;
     box-shadow: 0 10px 15px 0 rgba(27, 95, 193, 0.19);
-    background: var(--blue);
-
     font-family: var(--second-family);
     font-weight: 500;
     font-size: 14px;
     line-height: 214%;
     text-align: center;
     color: #fff;
+    background: var(--blue);
     transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
-      background-color: #1a79fd;
       box-shadow: 0 10px 15px 0 #7fadec;
+      background-color: #1a79fd;
     }
   }
 }

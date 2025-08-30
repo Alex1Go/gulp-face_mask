@@ -1,9 +1,9 @@
 @use "../../scss/mixins/breakpoint";
 
 .footer {
-  background-color: #d9d9d9;
   padding-top: 80px;
   padding-bottom: 40px;
+  background-color: #d9d9d9;
 
   &__box {
     display: flex;
@@ -13,10 +13,12 @@
     @include breakpoint.tablet {
       margin-bottom: 50px;
     }
+
     @include breakpoint.mobile {
       flex-direction: column;
     }
   }
+
   &__net-box {
     display: flex;
     gap: 200px;
@@ -24,31 +26,33 @@
     @include breakpoint.tablet {
       gap: 100px;
     }
+
     @include breakpoint.mobile {
+      justify-content: space-between;
       margin-top: 25px;
       gap: 0;
-      justify-content: space-between;
     }
   }
 
   &__logo {
-    height: 40px;
-    width: 160px;
-    background-color: #c4c4c4;
-    text-align: center;
     align-items: center;
-    padding: 7px 30px;
     margin-bottom: 30px;
-    cursor: pointer;
+    padding: 7px 30px;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    background-color: #c4c4c4;
     transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
       box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 
     &:focus,
     &:hover {
-      background-color: #79b3d488;
       box-shadow: 0 9.04932px 26.5717px #1760d640;
+      background-color: #79b3d488;
     }
   }
+
   &__logo-link {
     font-family: var(--second-family);
     font-weight: 600;
@@ -56,6 +60,7 @@
     line-height: 150%;
     color: var(--dark);
   }
+
   &__text {
     max-width: 320px;
     font-family: var(--font-family);
@@ -64,15 +69,17 @@
     line-height: 187%;
     color: var(--grey);
   }
+
   &__follow,
   &__nav {
+    margin-bottom: 20px;
     font-family: var(--second-family);
     font-weight: 500;
     font-size: 20px;
     line-height: 150%;
     color: var(--dark);
-    margin-bottom: 20px;
   }
+
   &__network-name,
   &__nav-link {
     font-family: var(--font-family);
@@ -87,6 +94,7 @@
       color: #0c99eba9;
     }
   }
+
   &__network-item,
   &__nav-item {
     transition: scale 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -96,11 +104,13 @@
       scale: 1.15;
     }
   }
+
   &__box-1 {
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
   &__span {
     margin: 0 4px;
     width: 15px;

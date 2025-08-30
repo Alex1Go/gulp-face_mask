@@ -27,12 +27,12 @@
   }
 
   &__item {
-    padding: 40px 40px;
-    max-width: 370px;
-    background: white;
     border: 1px solid rgba(146, 134, 135, 0.1);
-    box-shadow: 0 9.04932px 26.5717px #d7e4f940;
     border-radius: 15px 15px 15px 0;
+    padding: 40px;
+    max-width: 370px;
+    box-shadow: 0 9.04932px 26.5717px #d7e4f940;
+    background: #fff;
   }
 
   &__item-del {
@@ -40,12 +40,13 @@
       display: none;
     }
   }
+
   &__text {
+    margin-bottom: 30px;
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 16px;
     line-height: 170%;
-    margin-bottom: 30px;
     color: var(--dark);
   }
 

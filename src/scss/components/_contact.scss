@@ -1,8 +1,8 @@
 @use "../../scss/mixins/breakpoint";
 
 .contact {
+  padding: 41px 0 39px;
   background: var(--accent);
-  padding: 41px 0 39px 0;
 
   &__block {
     display: flex;
@@ -13,13 +13,16 @@
       gap: 20px;
     }
   }
+
   &__box {
     display: flex;
     align-items: center;
   }
+
   &__img {
     margin-right: 14px;
   }
+
   &__name-1 {
     font-family: var(--second-family);
     font-weight: 500;
@@ -27,6 +30,7 @@
     line-height: 150%;
     color: var(--dark);
   }
+
   &__name-2 {
     font-family: var(--font-family);
     font-weight: 400;
@@ -34,7 +38,8 @@
     line-height: 133%;
     color: var(--dark);
   }
+
   &__line {
-    border: 1px solid white;
+    border: 1px solid #fff;
   }
 }

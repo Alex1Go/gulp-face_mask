@@ -40,8 +40,8 @@
   }
 
   &__box1 {
-    max-width: 570px;
     position: relative;
+    max-width: 570px;
 
     @include breakpoint.tablet {
       margin-bottom: 20px;
@@ -57,12 +57,13 @@
 
   &__1 {
     position: absolute;
-    top: 284px;
     right: 0;
+    top: 284px;
+    padding: 60px 30px 80px;
     width: 285px;
+
     // height: 332px;
     background-color: var(--blue);
-    padding: 60px 30px 80px 30px;
 
     @include breakpoint.mobile {
       top: 0;
@@ -80,15 +81,16 @@
   }
 
   &__2 {
+    padding: 80px 30px 132px;
     width: 285px;
     height: 100%;
-    padding: 80px 30px 132px 30px;
     background-color: var(--light-color);
 
     @include breakpoint.tablet {
-      width: 354px;
       padding: 30px;
+      width: 354px;
     }
+
     @include breakpoint.mobile {
       max-width: 335px;
     }
@@ -104,35 +106,37 @@
 
   &__3 {
     border-radius: 0 20px 0 0;
+    padding: 80px 30px 132px;
     width: 285px;
     height: 100%;
-    padding: 80px 30px 132px 30px;
     background-color: var(--blue);
 
     @include breakpoint.tablet {
-      width: 354px;
-      border-radius: 0 0 0 0;
+      border-radius: 0;
       padding: 30px;
+      width: 354px;
     }
+
     @include breakpoint.mobile {
       max-width: 335px;
     }
   }
 
   &__4 {
+    border-radius: 0 0 20px;
     padding: 45px 40px 45px 38px;
-    border-radius: 0 0 20px 0;
     width: 570px;
     min-height: 284px;
     background-color: var(--accent);
 
     @include breakpoint.tablet {
+      border-radius: 0;
       width: 708px;
-      border-radius: 0 0 0 0;
     }
+
     @include breakpoint.mobile {
-      max-width: 335px;
       padding: 20px;
+      max-width: 335px;
     }
   }
 
@@ -149,50 +153,50 @@
   }
 
   &__text4 {
+    margin-bottom: 26px;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
     color: #000;
-    margin-bottom: 26px;
   }
 
   &__link {
+    margin-right: 40px;
     border: 1px solid var(--blue);
     border-radius: 8px;
     padding: 8px 22px;
     width: 125px;
     height: 46px;
-    background-color: transparent;
-
     font-family: var(--second-family);
     font-weight: 500;
     font-size: 14px;
     line-height: 214%;
     text-align: center;
     color: var(--blue);
-    margin-right: 40px;
+    background-color: transparent;
     transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
+      color: #fff;
       background-color: var(--blue);
-      color: white;
     }
+
     @include breakpoint.mobile {
-      margin-bottom: 20px;
       margin-right: 0;
-      width: 185px;
+      margin-bottom: 20px;
       padding: 8px auto;
+      width: 185px;
     }
   }
 
   &__line {
+    margin-right: 40px;
+    border: 1px solid var(--light-color);
     width: 1px;
     height: 46px;
-    border: 1px solid var(--light-color);
     background-color: var(--light-color);
-    margin-right: 40px;
 
     @include breakpoint.mobile {
       display: none;
