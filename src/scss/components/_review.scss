@@ -1,7 +1,9 @@
+@use "../../scss/mixins/breakpoint";
+
 .rev {
   height: 192px;
 
-  @include mobile {
+  @include breakpoint.mobile {
     height: 210px;
   }
   &__star-box {
@@ -13,16 +15,15 @@
     justify-content: space-between;
     transform: translate(0%, -80%);
 
-    @include tablet {
+    @include breakpoint.tablet {
       gap: 30px;
     }
-    @include mobile {
+    @include breakpoint.mobile {
       flex-direction: column;
     }
   }
 
   &__item {
-
     padding: 40px 40px;
     max-width: 370px;
     background: white;
@@ -31,7 +32,7 @@
     border-radius: 15px 15px 15px 0;
   }
   &__item-del {
-    @include tablet {
+    @include breakpoint.tablet {
       display: none;
     }
   }

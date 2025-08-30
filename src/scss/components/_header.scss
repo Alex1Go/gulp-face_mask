@@ -1,3 +1,4 @@
+@use "../../scss/mixins/breakpoint";
 .header {
   position: absolute;
   width: 100%;
@@ -18,7 +19,7 @@
     line-height: 200%;
     color: #fff;
 
-    @include tablet {
+    @include breakpoint.tablet {
       font-weight: 600;
     }
   }
@@ -38,7 +39,7 @@
       background-color: #79b3d488;
       box-shadow: 0 9.04932px 26.5717px #1760d640;
     }
-    @include tablet {
+    @include breakpoint.tablet {
       width: 100px;
       padding: 3px 20px;
     }
@@ -48,7 +49,7 @@
     display: flex;
     align-items: center;
 
-    @include mobile {
+    @include breakpoint.mobile {
       flex-direction: column;
       position: fixed;
       left: 0;
@@ -75,11 +76,11 @@
     gap: 45px;
     margin-right: 45px;
 
-    @include tablet {
+    @include breakpoint.tablet {
       gap: 25px;
       margin-right: 25px;
     }
-    @include mobile {
+    @include breakpoint.mobile {
       flex-direction: column;
       gap: 20px;
     }
@@ -121,11 +122,11 @@
       background-color: #1a79fd;
       box-shadow: 0 10px 15px 0 #7fadec;
     }
-    @include tablet {
+    @include breakpoint.tablet {
       height: 40px;
       padding: 5px 20px;
     }
-    @include mobile {
+    @include breakpoint.mobile {
       margin-top: auto;
     }
   }
@@ -137,5 +138,4 @@
     text-align: center;
     color: #fff;
   }
-
 }

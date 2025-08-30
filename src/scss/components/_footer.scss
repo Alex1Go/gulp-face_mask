@@ -1,3 +1,5 @@
+@use "../../scss/mixins/breakpoint";
+
 .footer {
   background-color: #d9d9d9;
   padding-top: 80px;
@@ -8,10 +10,10 @@
     justify-content: space-between;
     margin-bottom: 100px;
 
-    @include tablet {
+    @include breakpoint.tablet {
       margin-bottom: 50px;
     }
-    @include mobile {
+    @include breakpoint.mobile {
       flex-direction: column;
     }
   }
@@ -19,10 +21,10 @@
     display: flex;
     gap: 200px;
 
-    @include tablet {
+    @include breakpoint.tablet {
       gap: 100px;
     }
-    @include mobile {
+    @include breakpoint.mobile {
       margin-top: 25px;
       gap: 0;
       justify-content: space-between;

@@ -1,3 +1,4 @@
+@use "../../scss/mixins/breakpoint";
 .hero {
   background-color: #f7fdfb;
 
@@ -8,11 +9,11 @@
     background-repeat: no-repeat;
     background-position: top right;
 
-    @include tablet {
+    @include breakpoint.tablet {
       background-position: center;
       height: 647px;
     }
-    @include mobile {
+    @include breakpoint.mobile {
       flex-direction: column;
       height: 891px;
     }
@@ -23,12 +24,12 @@
     height: 744px;
     margin-top: 147px;
 
-    @include tablet {
+    @include breakpoint.tablet {
       width: 328px;
       height: 500px;
     }
 
-    @include mobile {
+    @include breakpoint.mobile {
       width: 335px;
       height: 375px;
       margin-top: 20px;
@@ -40,12 +41,12 @@
     height: 430px;
     margin-right: 88px;
 
-    @include tablet {
+    @include breakpoint.tablet {
       margin-right: auto;
       max-width: 350px;
       margin-top: 204px;
     }
-    @include mobile {
+    @include breakpoint.mobile {
       margin-top: 90px;
       max-width: 335px;
     }
@@ -68,7 +69,7 @@
     color: var(--dark);
     margin-bottom: 30px;
 
-    @include tablet {
+    @include breakpoint.tablet {
       font-size: 50px;
     }
   }
@@ -81,7 +82,7 @@
     color: var(--grey);
     margin-bottom: 50px;
 
-    @include mobile {
+    @include breakpoint.mobile {
       margin-bottom: 25px;
     }
   }

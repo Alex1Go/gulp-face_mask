@@ -1,6 +1,8 @@
+@use "../../scss/mixins/breakpoint";
+
 .order {
   padding-bottom: 120px;
-  @include tablet {
+  @include breakpoint.tablet {
     padding-bottom: 70px;
   }
 
@@ -15,7 +17,7 @@
     color: var(--dark);
     margin-bottom: 30px;
 
-    @include tablet {
+    @include breakpoint.tablet {
       font-size: 32px;
     }
   }

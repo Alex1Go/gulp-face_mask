@@ -1,21 +1,23 @@
+@use "../../scss/mixins/breakpoint";
+
 .about {
   padding-top: 80px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 
-  @include tablet {
+  @include breakpoint.tablet {
     padding-top: 40px;
   }
 
   &__svg1 {
     position: absolute;
-    transform: translate(-390px, -195px);
     fill: linear-gradient(
       127deg,
       rgba(27, 95, 193, 0.08) 0%,
       rgba(27, 95, 193, 0.04) 100%
     );
+    transform: translate(-390px, -195px);
 
-    @include tablet {
+    @include breakpoint.tablet {
       display: none;
     }
   }
@@ -34,10 +36,11 @@
     line-height: 104%;
     color: var(--dark);
 
-    @include tablet {
+    @include breakpoint.tablet {
       font-size: 32px;
     }
   }
+
   &__text {
     font-family: var(--font-family);
     font-weight: 400;
@@ -45,44 +48,48 @@
     line-height: 187%;
     color: var(--grey);
   }
+
   &__span {
     font-weight: 700;
   }
+
   &__first-box {
     margin-bottom: 80px;
 
-    @include tablet {
+    @include breakpoint.tablet {
       margin-bottom: 40px;
     }
   }
+
   &__text-box {
     max-width: 523px;
 
-    @include tablet {
+    @include breakpoint.tablet {
       max-width: 708px;
     }
-    @include mobile {
+
+    @include breakpoint.mobile {
       max-width: 335px;
     }
   }
 
   &__svg2 {
-    z-index: -5;
     position: absolute;
-    transform: translate(770px, -620px);
+    z-index: -5;
     fill: linear-gradient(
       307deg,
       rgba(40, 189, 134, 0.08) 0%,
       rgba(40, 189, 134, 0.04) 100%
     );
+    transform: translate(770px, -620px);
 
-    @include tablet {
+    @include breakpoint.tablet {
       display: none;
     }
   }
 
   &__img2 {
-    @include tablet {
+    @include breakpoint.tablet {
       display: none;
     }
   }

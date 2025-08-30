@@ -1,3 +1,5 @@
+@use "./mixins/breakpoint";
+@use "./mixins/burger";
 *,
 *::before,
 *::after {
@@ -20,6 +22,9 @@ ul {
 
 img {
   display: block;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .page {
@@ -36,12 +41,6 @@ img {
   font-size: 16px;
 }
 
-img {
-  height: auto;
-  max-width: 100%;
-  object-fit: cover;
-}
-
 a {
   text-decoration: none;
 }
@@ -55,12 +54,12 @@ a {
   padding: 0 390px;
   width: 1920px;
 
-  @include tablet {
+  @include breakpoint.tablet {
     padding: 0 30px;
     width: 768px;
   }
 
-  @include mobile {
+  @include breakpoint.mobile {
     padding: 0 20px;
     width: 375px;
   }
@@ -122,14 +121,13 @@ a {
 }
 
 .burger {
-  @include burger;
-
   --burger-height: 18px;
-
   display: none;
   color: rgb(150, 148, 148);
 
-  @include mobile {
+  @include burger.burger;
+
+  @include breakpoint.mobile {
     display: block;
   }
 }

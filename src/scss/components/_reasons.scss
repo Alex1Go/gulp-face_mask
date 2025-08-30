@@ -1,9 +1,11 @@
+@use "../../scss/mixins/breakpoint";
+
 .reas {
   background-color: #f7fdfb;
   padding-bottom: 394px;
   border-radius: 0 0 0 150px;
 
-  @include mobile {
+  @include breakpoint.mobile {
     padding-bottom: 760px;
     border-radius: 0 0 0 0;
   }
@@ -11,19 +13,19 @@
     display: flex;
     gap: 90px;
 
-    @include tablet {
+    @include breakpoint.tablet {
       gap: 0;
     }
   }
   &__img-box {
-    @include tablet {
+    @include breakpoint.tablet {
       display: none;
     }
   }
   &__box {
     max-width: 650px;
 
-    @include tablet {
+    @include breakpoint.tablet {
       max-width: 708px;
     }
   }
@@ -31,7 +33,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px 26px;
-    @include tablet {
+    @include breakpoint.tablet {
       gap: 30px 35px;
     }
   }
@@ -39,7 +41,7 @@
     display: flex;
     max-width: 312px;
 
-    @include tablet {
+    @include breakpoint.tablet {
       max-width: 335px;
     }
   }
@@ -51,7 +53,7 @@
     color: var(--dark);
     margin-bottom: 26px;
 
-    @include tablet {
+    @include breakpoint.tablet {
       font-size: 32px;
       margin-bottom: 20px;
     }
