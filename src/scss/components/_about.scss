@@ -1,6 +1,7 @@
 @use "../../scss/mixins/breakpoint";
 
 .about {
+  position: relative;
   padding-top: 80px;
   padding-bottom: 0;
 
@@ -15,8 +16,9 @@
       rgba(27, 95, 193, 0.08) 0%,
       rgba(27, 95, 193, 0.04) 100%
     );
-    transform: translate(-390px, -195px);
-
+    // transform: translate(0px, -195px);
+    top: -195px;
+    left: 0;
     @include breakpoint.tablet {
       display: none;
     }
@@ -81,14 +83,16 @@
       rgba(40, 189, 134, 0.08) 0%,
       rgba(40, 189, 134, 0.04) 100%
     );
-    transform: translate(770px, -620px);
-
+    // transform: translate(770px, 0px);
+    right: 0;
+    top: 770px;
     @include breakpoint.tablet {
       display: none;
     }
   }
 
   &__img2 {
+    z-index: 5;
     @include breakpoint.tablet {
       display: none;
     }
