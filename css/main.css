@@ -479,7 +479,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   height: 891px;
-  background-image: url("./img/fon.png");
+  background-image: url("../img/fon.png");
   background-position: top right;
   background-repeat: no-repeat;
 }
@@ -685,6 +685,7 @@ a {
 }
 
 .about {
+  position: relative;
   padding-top: 80px;
   padding-bottom: 0;
 }
@@ -695,10 +696,9 @@ a {
 }
 .about__svg1 {
   position: absolute;
+  left: 0;
+  top: -195px;
   fill: linear-gradient(127deg, rgba(27, 95, 193, 0.08) 0%, rgba(27, 95, 193, 0.04) 100%);
-  -webkit-transform: translate(-390px, -195px);
-  -ms-transform: translate(-390px, -195px);
-  transform: translate(-390px, -195px);
 }
 @media (max-width: 1199px) {
   .about__svg1 {
@@ -760,16 +760,18 @@ a {
 }
 .about__svg2 {
   position: absolute;
+  right: 0;
+  top: 770px;
   z-index: -5;
   fill: linear-gradient(307deg, rgba(40, 189, 134, 0.08) 0%, rgba(40, 189, 134, 0.04) 100%);
-  -webkit-transform: translate(770px, -620px);
-  -ms-transform: translate(770px, -620px);
-  transform: translate(770px, -620px);
 }
 @media (max-width: 1199px) {
   .about__svg2 {
     display: none;
   }
+}
+.about__img2 {
+  z-index: 5;
 }
 @media (max-width: 1199px) {
   .about__img2 {
